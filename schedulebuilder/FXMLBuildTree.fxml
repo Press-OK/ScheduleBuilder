@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="514.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulebuilder.FXMLBuildTreeController">
+  <children>
+    <AnchorPane prefHeight="90.0" prefWidth="269.0">
+      <children>
+        <Label layoutX="7.0" layoutY="-1.0" text="Add...">
+          <font>
+            <Font name="System Italic" size="16.0" />
+          </font>
+        </Label>
+        <Button layoutX="0.0" layoutY="23.0" mnemonicParsing="false" onAction="#newCourse" text="Course">
+          <font>
+            <Font size="14.0" fx:id="x1" />
+          </font>
+        </Button>
+        <Button font="$x1" layoutX="72.0" layoutY="23.0" mnemonicParsing="false" onAction="#newWeek" text="Week" />
+        <Button contentDisplay="CENTER" layoutX="0.0" layoutY="59.0" minHeight="21.0" mnemonicParsing="false" onAction="#removeSelectedItem" prefHeight="21.0" prefWidth="134.5" text="Remove Selection">
+          <font>
+            <Font size="11.0" fx:id="x2" />
+          </font>
+        </Button>
+        <Button font="$x1" layoutX="183.0" layoutY="23.0" mnemonicParsing="false" onAction="#generateCourse" text="Generate..." textFill="#0066ff" />
+        <Button contentDisplay="CENTER" font="$x2" layoutX="144.0" layoutY="59.0" minHeight="21.0" mnemonicParsing="false" onAction="#renameSelectedItem" prefHeight="21.0" prefWidth="125.0" text="Rename Selection" />
+      </children>
+    </AnchorPane>
+    <TreeView id="treeViewControl" fx:id="tree" editable="false" onMouseClicked="#changeActiveWeek" prefHeight="357.0" prefWidth="269.0" showRoot="false" />
+    <Button mnemonicParsing="false" onAction="#viewResults" prefHeight="36.000099999997474" prefWidth="282.0" text="View Results">
+      <VBox.margin>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="12.0" />
+      </VBox.margin>
+    </Button>
+  </children>
+  <padding>
+    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+  </padding>
+</VBox>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox id="HBox" fx:id="parentHBox" prefHeight="480.0" prefWidth="989.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="schedulebuilder.FXMLResultsWindowController">
+  <children>
+    <AnchorPane prefHeight="456.0" prefWidth="356.0000999999975">
+      <children>
+        <Label alignment="CENTER" layoutX="23.0" layoutY="4.0" prefHeight="58.0" prefWidth="327.0" text="Modify filters below to customize which timetables are displayed." textAlignment="CENTER" wrapText="true">
+          <font>
+            <Font size="16.0" />
+          </font>
+        </Label>
+        <CheckBox fx:id="cbMonday" layoutX="38.0" layoutY="76.0" mnemonicParsing="false" onAction="#filterAndUpdateList" selected="true" text="M" />
+        <CheckBox fx:id="cbTuesday" layoutX="104.0" layoutY="76.0" mnemonicParsing="false" onAction="#filterAndUpdateList" selected="true" text="T" />
+        <CheckBox fx:id="cbWednesday" layoutX="164.0" layoutY="76.0" mnemonicParsing="false" onAction="#filterAndUpdateList" selected="true" text="W" />
+        <CheckBox fx:id="cbThursday" layoutX="230.0" layoutY="76.0" mnemonicParsing="false" onAction="#filterAndUpdateList" selected="true" text="T" />
+        <CheckBox fx:id="cbFriday" layoutX="289.0" layoutY="77.0" mnemonicParsing="false" onAction="#filterAndUpdateList" selected="true" text="F" />
+        <Label layoutX="27.0" layoutY="117.0" text="Maximum days per week:" />
+        <Slider id="sliderHours" fx:id="sliderDays" layoutX="18.0" layoutY="141.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" onMouseReleased="#filterAndUpdateList" prefWidth="327.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="5.0" />
+        <Label layoutX="26.0" layoutY="199.0" text="Maximum hours in a day:" />
+        <Slider id="sliderDays" fx:id="sliderHours" layoutX="17.0" layoutY="223.0" majorTickUnit="1.0" max="13.0" min="1.0" minorTickCount="0" onMouseReleased="#filterAndUpdateList" prefWidth="327.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="13.0" />
+        <ListView fx:id="resultList" layoutX="23.0" layoutY="323.0" prefHeight="143.00009999999747" prefWidth="318.0" />
+        <Label layoutX="43.0" layoutY="288.0" text="Sort by fewest:" />
+        <RadioButton fx:id="radioHours" layoutX="182.0" layoutY="288.0" mnemonicParsing="false" onAction="#filterAndUpdateList" selected="true" text="Hours">
+          <toggleGroup>
+            <ToggleGroup fx:id="sorting" />
+          </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="radioDays" layoutX="273.0" layoutY="288.0" mnemonicParsing="false" onAction="#filterAndUpdateList" text="Days" toggleGroup="$sorting" />
+      </children>
+    </AnchorPane>
+    <VBox fx:id="parentVBox" prefHeight="450.0" prefWidth="632.0">
+      <children>
+        <HBox fx:id="legendHBox" prefHeight="38.0" prefWidth="632.0">
+          <VBox.margin>
+            <Insets bottom="10.0" />
+          </VBox.margin>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+</HBox>

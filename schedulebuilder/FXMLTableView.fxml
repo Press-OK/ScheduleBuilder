@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="tableGrid" alignment="CENTER" gridLinesVisible="true" prefHeight="494.0" prefWidth="629.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="schedulebuilder.FXMLTableViewController">
+  <children>
+    <Label id="test" alignment="TOP_RIGHT" contentDisplay="LEFT" prefHeight="36.0" prefWidth="101.00009999999747" text="7:00" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="1">
+      <font>
+        <Font size="14.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label alignment="TOP_RIGHT" contentDisplay="LEFT" font="$x1" prefHeight="36.0" prefWidth="100.0" text="8:00" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Label alignment="TOP_RIGHT" contentDisplay="LEFT" font="$x1" prefHeight="36.0" prefWidth="100.0" text="9:00" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <Label alignment="TOP_RIGHT" contentDisplay="LEFT" font="$x1" prefHeight="36.0" prefWidth="100.0" text="10:00" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <Label alignment="TOP_RIGHT" contentDisplay="LEFT" font="$x1" prefHeight="36.0" prefWidth="100.0" text="11:00" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+    <Label alignment="TOP_RIGHT" contentDisplay="LEFT" font="$x1" prefHeight="36.0" prefWidth="100.0" text="12:00" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <Label alignment="TOP_RIGHT" contentDisplay="LEFT" font="$x1" prefHeight="36.0" prefWidth="100.0" text="1:00" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+    <Label alignment="TOP_RIGHT" contentDisplay="LEFT" font="$x1" prefHeight="36.0" prefWidth="100.0" text="2:00" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+    <Label alignment="TOP_RIGHT" contentDisplay="LEFT" font="$x1" prefHeight="36.0" prefWidth="100.0" text="3:00" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+    <Label alignment="TOP_RIGHT" contentDisplay="LEFT" font="$x1" prefHeight="36.0" prefWidth="100.0" text="4:00" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+    <Label alignment="TOP_RIGHT" contentDisplay="LEFT" font="$x1" prefHeight="36.0" prefWidth="100.0" text="5:00" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+    <Label alignment="TOP_RIGHT" contentDisplay="LEFT" font="$x1" prefHeight="36.0" prefWidth="100.0" text="6:00" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="12" />
+    <Label alignment="TOP_RIGHT" contentDisplay="LEFT" font="$x1" prefHeight="36.0" prefWidth="100.0" text="7:00" textAlignment="RIGHT" GridPane.columnIndex="0" GridPane.rowIndex="13" />
+    <Label alignment="CENTER" prefHeight="35.0" prefWidth="102.0" text="Monday" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <Label alignment="CENTER" prefHeight="35.0" prefWidth="102.0" text="Tuesday" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+    <Label alignment="CENTER" prefHeight="35.0" prefWidth="102.0" text="Wednesday" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+    <Label alignment="CENTER" prefHeight="35.0" prefWidth="102.0" text="Thursday" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+    <Label alignment="CENTER" prefHeight="35.0" prefWidth="102.0" text="Friday" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <padding>
+    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+  </padding>
+  <rowConstraints>
+    <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox id="VBox" prefHeight="531.0" prefWidth="938.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="schedulebuilder.FXMLEditorWindowController">
+  <children>
+    <MenuBar>
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#fileNew" text="New" />
+            <MenuItem mnemonicParsing="false" onAction="#fileSave" text="Save" />
+            <MenuItem mnemonicParsing="false" onAction="#fileSaveAs" text="Save As..." />
+            <MenuItem mnemonicParsing="false" onAction="#fileOpen" text="Open..." />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#fileExit" text="Exit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#newCourse" text="Add Course" />
+            <MenuItem mnemonicParsing="false" onAction="#newWeek" text="Add Week to Selection" />
+            <MenuItem mnemonicParsing="false" onAction="#generateCourse" text="Generate Course" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" onAction="#duplicateSelectedItem" text="Duplicate Selected Item" />
+            <MenuItem mnemonicParsing="false" onAction="#removeSelectedItem" text="Remove Selected Item" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#helpAbout" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <HBox fx:id="treebox" prefHeight="519.0" prefWidth="952.0">
+      <children>
+        <VBox fx:id="tablebox" prefHeight="488.0" prefWidth="642.0">
+          <children>
+            <Label fx:id="taskLabel" alignment="CENTER" minHeight="-1.0" prefHeight="-1.0" prefWidth="642.0" text="Add courses to get started. Use the grid to edit weekly options." textAlignment="CENTER" visible="true">
+              <font>
+                <Font name="System Bold" size="20.0" />
+              </font>
+              <VBox.margin>
+                <Insets bottom="10.0" />
+              </VBox.margin>
+            </Label>
+          </children>
+          <HBox.margin>
+            <Insets />
+          </HBox.margin>
+        </VBox>
+      </children>
+    </HBox>
+  </children>
+</VBox>
